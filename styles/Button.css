@@ -1,0 +1,39 @@
+.blackButtonComponent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    width: 8rem;
+    color: #ffffff;
+    background-color: #333333;
+    border: 2px solid black;
+    height: 45px;
+    margin: 3rem 0 0 1rem;
+    font-family: sans-serif;
+    cursor: pointer;
+    transition: box-shadow 0.3s, color 0.3s, width 0.5s, transform 0.3s;
+}
+
+
+.blackButtonComponent:hover {
+    box-shadow: 0 2px 7px rgba(0, 0, 0, 0.4);
+
+    color: #f5f5f5;
+    transform: scale(1.05);
+    /* Add a slight scale effect on hover */
+}
+
+@media (max-width: 576px) {
+    .blackButtonComponent {
+        height: 40px;
+        margin: 1rem 0 0 0;
+    }
+
+}
+@media (min-width: 1200px) {
+    .blackButtonComponent {
+
+        margin: 3rem 0 0 1rem;
+    }
+
+}
